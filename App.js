@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Tex style={styles.welcome} t>È us guri, não tem jeito</Tex>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +13,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#023535',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
   },
 });
