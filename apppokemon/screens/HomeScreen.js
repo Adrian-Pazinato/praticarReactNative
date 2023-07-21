@@ -1,17 +1,17 @@
-// Exemplo de HomeScreen.js
 import React from 'react';
-import styles from '../styles';
 import { View, Text, Button } from 'react-native';
+import styles from '../styles';
 
 const HomeScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Button
-                style={styles.botao1}
-                title="Ir para a página de detalhes"
-                onPress={() => navigation.navigate('Details')}
+                title="Ver o Japa"
+                onPress={() => navigation.navigate('Japa')}
+                styles={styles.botaoJapa}
             />
         </View>
+
     );
 };
 

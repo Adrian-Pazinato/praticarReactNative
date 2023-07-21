@@ -1,10 +1,9 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Button } from 'react-native';
-import styles from './styles';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Sobre from './screens/CharacterSelectionScreen';
 import HomeScreen from './screens/HomeScreen';
+import DetailsScreen from './screens/DetailsScreen';
+import styles from './styles';
 
 const Stack = createStackNavigator();
 
@@ -12,11 +11,10 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Pokemon Manager" component={HomeScreen} />
-        <Stack.Screen name="Details" component={Sobre} />
+        <Stack.Screen name="Inicio" component={HomeScreen} />
+        <Stack.Screen name="Japa" component={DetailsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
-
   );
 };
 
