@@ -1,21 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
+import styles from './styles';
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Olá, mundo doente</Text>
-      <StatusBar style="auto" />
+      <Text style={styles.header}>Ola arrombado</Text>
+      <TouchableOpacity style={styles.button}>
+        <Text style={styles.buttonText}>Pisca a xereca</Text>
+      </TouchableOpacity>
     </View>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
