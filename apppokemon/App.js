@@ -1,15 +1,22 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, Button } from 'react-native';
 import styles from './styles';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Sobre from './screens/Sobre';
+import HomeScreen from './screens/HomeScreen';
+
+const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Ola arrombado</Text>
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Pisca a xereca</Text>
-      </TouchableOpacity>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Details" component={Sobre} />
+      </Stack.Navigator>
+    </NavigationContainer>
+
   );
 };
 
