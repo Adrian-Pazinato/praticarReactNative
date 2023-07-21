@@ -5,20 +5,20 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#aefdae',
   },
   header: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 30,
   },
   button: {
-    backgroundColor: 'blue',
+    backgroundColor: '#f1f1f1',
     padding: 10,
     borderRadius: 5,
   },
   buttonText: {
-    color: 'white',
+    color: 'black',
     textAlign: 'center',
   },
 });
