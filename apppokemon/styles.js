@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     color: 'black',
     textAlign: 'center',
   },
+  
   botao1: {
     backgroundColor: 'purple',
     borderRadius: 10,

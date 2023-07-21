@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, Button } from 'react-native';
 import styles from './styles';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Sobre from './screens/Sobre';
+import Sobre from './screens/CharacterSelectionScreen';
 import HomeScreen from './screens/HomeScreen';
 
 const Stack = createStackNavigator();
