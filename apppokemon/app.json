@@ -5,6 +5,14 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8e20829a-ffa8-4203-b59a-52085ebf87fe"
+      }
+    },
+    "android": {
+      "package": "japa.app"
+    }
   }
 }
